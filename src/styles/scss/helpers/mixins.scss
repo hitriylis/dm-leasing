@@ -1,0 +1,167 @@
+// ---------- media ----------
+@use "sass:map";
+
+$breakpoints: (
+  breakpoint-mobile: 540px,
+  breakpoint-small: 768px,
+  breakpoint-medium: 860px,
+  breakpoint-large: 1240px,
+);
+
+@mixin media($size: "small", $value: null) {
+  @if $size == "custom" {
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: map.get($breakpoints, breakpoint-#{$size})) {
+      @content;
+    }
+  }
+}
+
+@include media($size: "small", $value: null);
+
+// ---------- margins ----------
+$margins-top: (
+  "40": 40px,
+  "50": 50px,
+  "100": 100px,
+  "150": 150px,
+  "247": 247px,
+);
+
+@mixin mt($margins-top) {
+  @each $margin-name, $margin-value in $margins-top {
+    .mt-#{$margin-name} {
+      margin-top: $margin-value;
+    }
+  }
+}
+
+@include mt($margins-top);
+
+$margins-bottom: (
+  "20": 20px,
+  "30": 30px,
+  "38": 38px,
+  "45": 45px,
+  "50": 50px,
+  "70": 70px,
+  "150": 150px,
+);
+
+@mixin mb($margins-bottom) {
+  @each $margin-name, $margin-value in $margins-bottom {
+    .mb-#{$margin-name} {
+      margin-bottom: $margin-value;
+    }
+  }
+}
+
+@include mb($margins-bottom);
+
+$margins-left: (
+  "70": 70px,
+);
+
+@mixin ml($margins-left) {
+  @each $margin-name, $margin-value in $margins-left {
+    .ml-#{$margin-name} {
+      margin-left: $margin-value;
+    }
+  }
+}
+
+@include ml($margins-left);
+
+// ---------- paddings ----------
+$paddings-top: (
+  "20": 20px,
+  "40": 40px,
+  "50": 50px,
+);
+
+@mixin pt($paddings-top) {
+  @each $padding-name, $padding-value in $paddings-top {
+    .pt-#{$padding-name} {
+      padding-top: $padding-value;
+    }
+  }
+}
+
+@include pt($paddings-top);
+
+$paddings-right: (
+  "7": 7px,
+);
+
+@mixin pl($paddings-right) {
+  @each $padding-name, $padding-value in $paddings-right {
+    .pl-#{$padding-name} {
+      padding-right: $padding-value;
+    }
+  }
+}
+
+@include pl($paddings-right);
+
+$paddings-bottom: (
+  "32": 32px,
+);
+
+@mixin pb($paddings-bottom) {
+  @each $padding-name, $padding-value in $paddings-bottom {
+    .pb-#{$padding-name} {
+      padding-bottom: $padding-value;
+    }
+  }
+}
+
+@include pb($paddings-bottom);
+
+$paddings-left: (
+  "7": 7px,
+);
+
+@mixin pl($paddings-left) {
+  @each $padding-name, $padding-value in $paddings-left {
+    .pl-#{$padding-name} {
+      padding-left: $padding-value;
+    }
+  }
+}
+
+@include pl($paddings-left);
+
+// ---------- text ----------
+$sizes: (
+  "size-12": 12px,
+  "size-24": 24px,
+);
+
+@mixin text($sizes) {
+  @each $size-name, $size-value in $sizes {
+    .text-#{$size-name} {
+      font-size: $size-value;
+    }
+  }
+}
+
+@include text($sizes);
+
+$colors: (
+  "primary": $primary,
+  "dark": $dark,
+  "info": $info,
+);
+
+@mixin text($colors) {
+  @each $color-name, $color-value in $colors {
+    .text-#{$color-name} {
+      color: $color-value;
+    }
+  }
+}
+
+@include text($colors);

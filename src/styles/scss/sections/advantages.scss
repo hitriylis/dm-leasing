@@ -1,0 +1,40 @@
+.advantages {
+  @include media(mobile) {
+    margin-top: 100px;
+  }
+}
+
+.advantages__list {
+  gap: 40px;
+  text-align: center;
+
+  @include media(medium) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @include media(mobile) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+  }
+}
+
+.advantages__item-img {
+  @include media(mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.advantages__item-title {
+  @include media(mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.advantages__item-text {
+  text-align: left;
+
+  @include media(mobile) {
+    text-align: center;
+  }
+}

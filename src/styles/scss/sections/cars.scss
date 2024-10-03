@@ -1,0 +1,103 @@
+.tabs__btn {
+  width: 90%;
+  margin: 0 auto;
+  gap: 80px;
+
+  @include media(custom, 920px) {
+    width: 100%;
+    gap: 50px;
+  }
+
+  @include media(small) {
+    gap: 30px;
+  }
+
+  @include media(custom, 640px) {
+    flex-direction: column;
+  }
+}
+
+.tabs__btn--item {
+  font-weight: 700;
+  font-size: 24px;
+  background-color: transparent;
+
+  @include media(small) {
+    font-size: 22px;
+  }
+}
+
+.tabs__content {
+  column-gap: 30px;
+  row-gap: 80px;
+
+  @include media(large) {
+    column-gap: 40px;
+    row-gap: 60px;
+    margin-top: 80px;
+  }
+
+  @include media(custom, 1092px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media(medium) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+  }
+
+  @include media(mobile) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.tabs__content-card {
+  display: none;
+  text-align: center;
+
+  &.tabs__content-card--active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__details {
+  padding: 0 10px;
+  border: 2px solid $info;
+  border-top: none;
+}
+
+.card__price {
+  @include media(mobile) {
+    font-size: 18px;
+  }
+}
+
+.card__loan {
+  font-weight: 700;
+}
+
+.card__link {
+  width: 100%;
+  height: 25px;
+  color: $info;
+  border: 2px solid $info;
+  border-top: none;
+
+  &:hover {
+    color: $primary;
+    background-color: $info;
+  }
+
+  @include media(small) {
+    height: 50px;
+  }
+
+  @include media(mobile) {
+    font-size: 20px;
+  }
+}

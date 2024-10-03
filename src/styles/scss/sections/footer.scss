@@ -1,0 +1,76 @@
+.footer {
+  background-color: $dark;
+}
+
+.footer__menu {
+  @include media(small) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    column-gap: 40px;
+  }
+
+  @include media(mobile) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+}
+
+.footer__menu-list {
+  gap: 20px;
+  max-width: 250px;
+  flex-wrap: wrap;
+
+  @include media(small) {
+    padding-left: 20px;
+  }
+}
+
+.footer__menu-title {
+  font-weight: 700;
+
+  @include media(small) {
+    margin-bottom: 10px;
+  }
+
+  @include media(mobile) {
+    margin-bottom: 0;
+  }
+}
+
+.app {
+  gap: 40px;
+
+  @include media(mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__copy {
+  max-width: 810px;
+  margin: 0 auto 30px;
+  text-align: center;
+
+  @include media(mobile) {
+    margin-bottom: 50px;
+  }
+}
+
+.footer__copy-text {
+  span {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+  }
+}
+
+.footer__therms-list {
+  gap: 40px;
+
+  @include media(mobile) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}

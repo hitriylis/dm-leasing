@@ -1,0 +1,183 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 130%;
+  color: $dark;
+  background-color: $primary;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.form-field {
+  display: block;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: inherit;
+  background-color: $primary;
+  border: 1px solid $info;
+
+  &::placeholder {
+    color: $dark;
+    opacity: 0.5;
+  }
+}
+
+.btn {
+  display: block;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 23px;
+  background-color: $dark;
+  font-weight: 400;
+  font-size: 16px;
+  color: $primary;
+  line-height: 130%;
+  text-transform: uppercase;
+  transition: color ease 0.3s, transform 0.3s;
+
+  &:hover,
+  &:active {
+    background-color: $info;
+  }
+}
+
+.btn-link {
+  display: block;
+  width: 233px;
+  margin: 0 auto;
+  padding: 13px;
+  color: $primary !important;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $dark;
+
+  &:hover {
+    background-color: $info;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 130%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 96px;
+
+  @include media(medium) {
+    font-size: 80px;
+    line-height: 120%;
+  }
+
+  @include media(small) {
+    font-size: 70px;
+  }
+
+  @include media(mobile) {
+    font-size: 60px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+
+  @include media(medium) {
+    font-size: 40px;
+  }
+
+  @include media(small) {
+    font-size: 34px;
+  }
+
+  @include media(mobile) {
+    font-size: 30px;
+  }
+}
+
+h3,
+h4 {
+  font-size: 24px;
+
+  @include media(mobile) {
+    font-size: 22px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+}
+
+.bg-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link-active {
+  color: $info;
+}
+
+.link-hover {
+  &:hover {
+    color: $info;
+  }
+}
+
+.section-title-50 {
+  margin-bottom: 50px;
+
+  @include media(mobile) {
+    margin-bottom: 30px;
+  }
+}
+
+.section-title-20 {
+  margin-bottom: 20px;
+
+  @include media(mobile) {
+    margin-bottom: 30px;
+  }
+}

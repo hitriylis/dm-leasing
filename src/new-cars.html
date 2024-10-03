@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/css/app.css" />
+    <title>D&M Leasing</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div
+            class="header__inner d-flex justify-between align-center pt-40 mb-45"
+          >
+            <a href="index.html" class="header__logo">
+              <img src="assets/images/icons/logo.svg" alt="D&M Leasing logo" />
+            </a>
+            <nav class="header__menu menu">
+              <button class="menu__btn d-flex fd-column justify-between">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="menu__list d-flex text-primary">
+                <li class="menu__list-item text-uppercase">
+                  <a href="#" class="menu__list-link link-hover link-active"
+                    >New Cars
+                  </a>
+                </li>
+                <li class="menu__list-item text-uppercase">
+                  <a href="#" class="menu__list-link link-hover"
+                    >Pre-owned Cars</a
+                  >
+                </li>
+                <li class="menu__list-item text-uppercase">
+                  <a href="#" class="menu__list-link link-hover">Finance</a>
+                </li>
+                <li class="menu__list-item text-uppercase">
+                  <a href="#" class="menu__list-link link-hover"
+                    >Lease vs Buy</a
+                  >
+                </li>
+                <li class="menu__list-item text-uppercase">
+                  <a href="contacts.html" class="menu__list-link link-hover"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="cars mt-100">
+          <div class="container cars__container">
+            <h2 class="section-title-50">Choose your car</h2>
+            <div class="tabs">
+              <div class="tabs__btn d-flex justify-between">
+                <button
+                  class="tabs__btn--item link-hover"
+                  data-button-type="all"
+                >
+                  All
+                </button>
+                <button
+                  class="tabs__btn--item link-hover"
+                  data-button-type="car"
+                >
+                  Cars & Minivans
+                </button>
+                <button
+                  class="tabs__btn--item link-hover"
+                  data-button-type="truck"
+                >
+                  Pickups & Trucks
+                </button>
+                <button
+                  class="tabs__btn--item link-hover"
+                  data-button-type="suv"
+                >
+                  Crossovers & SUVs
+                </button>
+                <button
+                  class="tabs__btn--item link-hover"
+                  data-button-type="electro"
+                >
+                  Electrified
+                </button>
+              </div>
+
+              <div class="tabs__content d-grid-4 mt-100 mb-70">
+                <template id="card">
+                  <div
+                    class="tabs__content-card tabs__content-card--active"
+                    data-card-type=""
+                  >
+                    <a href="#">
+                      <img src="" alt="Car image" class="card__img d-block" />
+                    </a>
+                    <div class="card__details">
+                      <h4 class="card__title pt-20 mb-20"></h4>
+                      <p class="card__price mb-20"></p>
+                      <p class="card__loan text-size-24 mb-20"></p>
+                    </div>
+                    <a
+                      href="#"
+                      class="card__link d-flex justify-center align-center"
+                      >see details</a
+                    >
+                  </div>
+                </template>
+              </div>
+            </div>
+            <a href="#" class="btn-link">Show more</a>
+          </div>
+        </section>
+
+        <section class="articles mt-150 mb-150">
+          <div class="container articles__container">
+            <div class="articles__items d-grid-2 mb-70">
+              <div class="articles__item d-flex justify-between">
+                <img
+                  src="assets/images/articles/img-1.jpg"
+                  alt="Article picture"
+                  class="articles__item-img mb-30"
+                />
+                <div
+                  class="articles__item--content d-flex justify-between align-center"
+                >
+                  <h4 class="articles__item-title">
+                    An easier way to buy your next Toyota
+                  </h4>
+                  <a href="#" class="articles__item-link">more</a>
+                </div>
+              </div>
+
+              <div class="articles__item d-flex justify-between">
+                <img
+                  src="assets/images/articles/img-2.jpg"
+                  alt="Article picture"
+                  class="articles__item-img mb-30"
+                />
+                <div
+                  class="articles__item--content d-flex justify-between align-center"
+                >
+                  <h4 class="articles__item-title">
+                    A Guide to Road-Tripping With Pets
+                  </h4>
+                  <a href="#" class="articles__item-link">more</a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn-link">Show more</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer pt-50 pb-32">
+        <div class="container">
+          <nav class="footer__menu d-flex justify-around text-primary mb-50">
+            <ul class="footer__menu-list d-flex fd-column">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title text-size-24 mb-20">Products</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover">Used</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover">New</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover"
+                  >Sell your car</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__menu-list d-flex fd-column">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title text-size-24 mb-20">Resources</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover">Blog</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover">FAQ</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="contacts.html" class="footer__menu-link link-hover"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__menu-list d-flex fd-column">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title text-size-24 mb-20">
+                  Work With TrueCar
+                </p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover">Dealers</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover">Partners</a>
+              </li>
+            </ul>
+            <ul class="footer__menu-list d-flex fd-column">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title text-size-24 mb-20">About</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover">About us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover">Team</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link-hover">Careers</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="app d-flex justify-center mb-50">
+            <li class="app__item">
+              <a href="#" class="app__item-link">
+                <img
+                  class="app__item-img"
+                  src="./assets/images/icons/app-store.svg"
+                  alt="AppStore logo"
+                />
+              </a>
+            </li>
+            <li class="app__item">
+              <a href="#" class="app__item-link">
+                <img
+                  class="app__item-img"
+                  src="./assets/images/icons/google-play.svg"
+                  alt="GooglePlay logo"
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="footer__copy text-primary text-size-12">
+            <p class="footer__copy-text">
+              For questions about the TrueCar Auto Buying Service please call
+              <span>1-888-878-3227</span>.
+            </p>
+            <p class="footer__copy-text">
+              Certified Dealers are contractually obligated by TrueCar to meet
+              certain customer service requirements and complete the TrueCar
+              Dealer Certification Program.
+            </p>
+            <p class="footer__copy-text">
+              TrueCar does not broker, sell, or lease motor vehicles. Unless
+              otherwise noted, all vehicles shown on this website are offered
+              for sale by licensed motor vehicle dealers. All vehicles are
+              subject to prior sale. By accessing this website, you agree to the
+              TrueCar Terms of Service and Privacy Policy.
+            </p>
+          </div>
+          <nav class="footer__therms text-primary">
+            <ul class="footer__therms-list d-flex justify-center">
+              <li class="footer__therms-item">
+                <a href="#" class="footer__therms-link link-hover"
+                  >Terms of Service</a
+                >
+              </li>
+              <li class="footer__therms-item">
+                <a href="#" class="footer__therms-link link-hover"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="footer__therms-item">
+                <a href="#" class="footer__therms-link link-hover"
+                  >Do Not Sell My Personal Information</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <script src="js/burger.js"></script>
+    <script src="js/cards.js"></script>
+  </body>
+</html>

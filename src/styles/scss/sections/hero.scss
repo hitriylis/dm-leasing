@@ -1,0 +1,29 @@
+.hero {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.hero__btn {
+  max-width: 430px;
+  font-weight: 700;
+  font-size: 36px;
+
+  @include media(medium) {
+    max-width: 350px;
+    font-size: 28px;
+  }
+
+  @include media(small) {
+    max-width: 300px;
+    padding: 20px;
+    font-size: 26px;
+  }
+
+  @include media(mobile) {
+    max-width: 250px;
+    padding: 10px;
+    font-size: 22px;
+  }
+}

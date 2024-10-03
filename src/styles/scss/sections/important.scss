@@ -1,0 +1,36 @@
+.important {
+  @include media(mobile) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.important__text {
+  max-width: 580px;
+  margin: 0 auto 50px;
+
+  @include media(mobile) {
+    margin-bottom: 30px;
+  }
+}
+
+.important__list {
+  gap: 40px;
+
+  @include media(large) {
+    gap: 30px 20px;
+  }
+
+  @include media(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media(mobile) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+  }
+}
+
+.important__item-img {
+  width: 100%;
+}

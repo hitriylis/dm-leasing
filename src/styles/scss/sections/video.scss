@@ -1,0 +1,24 @@
+.video {
+  @include media(mobile) {
+    margin-top: 100px;
+  }
+}
+
+.video__subtitle {
+  @include media(mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.video__content {
+  display: block;
+  margin: 0 auto;
+
+  @include media(custom, 1000px) {
+    width: 100%;
+  }
+
+  @include media(small) {
+    height: 400px;
+  }
+}
