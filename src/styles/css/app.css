@@ -457,11 +457,36 @@ h4 {
     display: flex;
     z-index: 10;
   }
-}
-.menu__btn span {
-  height: 2px;
-  width: 100%;
-  background-color: #fff;
+  .menu__btn span, .menu__btn::before, .menu__btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu__btn span {
+    top: 9px;
+  }
+  .menu__btn::before {
+    top: 0;
+  }
+  .menu__btn::after {
+    bottom: 0;
+  }
+  .menu__btn.active span {
+    transform: scale(0);
+  }
+  .menu__btn.active::before {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  .menu__btn.active::after {
+    bottom: 9px;
+    transform: rotate(-45deg);
+  }
 }
 
 .menu__list {
