@@ -1009,10 +1009,10 @@ h4 {
   padding: 4px;
   color: #fff !important;
   text-align: center;
-  background-color: #06f;
+  background-color: #151515;
 }
 .articles__item-link:hover {
-  background-color: #151515;
+  background-color: #06f;
 }
 @media screen and (max-width: 1080px) {
   .articles__item-link {
@@ -1089,6 +1089,8 @@ h4 {
 }
 
 .tabs__content-card {
+  position: relative;
+  overflow: hidden;
   display: none;
   text-align: center;
 }
@@ -1099,6 +1101,10 @@ h4 {
 
 .card__img {
   width: 100%;
+  transition: transform 0.5s ease;
+}
+.card__img:hover {
+  transform: scale(1.1);
 }
 
 .card__details {

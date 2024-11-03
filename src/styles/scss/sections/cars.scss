@@ -52,6 +52,8 @@
 }
 
 .tabs__content-card {
+  position: relative;
+  overflow: hidden;
   display: none;
   text-align: center;
 
@@ -63,6 +65,11 @@
 
 .card__img {
   width: 100%;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .card__details {

@@ -59,10 +59,10 @@
   padding: 4px;
   color: $primary !important;
   text-align: center;
-  background-color: $info;
+  background-color: $dark;
 
   &:hover {
-    background-color: $dark;
+    background-color: $info;
   }
 
   @include media(custom, 1080px) {
